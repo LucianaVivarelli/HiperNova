@@ -1,6 +1,6 @@
 
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
+import {  FaInstagram, FaTwitter } from 'react-icons/fa';
 
 import './Footer.sass'; // Importe seu arquivo Sass para estilos
 
@@ -11,10 +11,10 @@ export const Footer = () => {
         <Row>
           <Col md={4}>
             <div className="social">
-              <FaFacebook className="icon" />
+             
               <FaInstagram className="icon" />
               <FaTwitter className="icon" />
-              <FaPinterest className="icon" />
+             
             </div>
           </Col>
           <Col md={8}>

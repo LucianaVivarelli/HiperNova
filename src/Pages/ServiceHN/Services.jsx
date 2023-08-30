@@ -31,22 +31,20 @@ const servicesData = [
 
 export const Services = () => {
   return (
-    <section className=" container-services py-5 animate__animated  animate__fadeInRight">
+    <section className="container-services py-5 animate__animated animate__fadeInRight">
       <Container>
         <Row>
           <Col className="title-col text-center">
             <div>
               <h2 className="title-main">Serviços<span> <FcServices /> </span></h2>
-              
             </div>
           </Col>
         </Row>
         <Row>
           {servicesData.map((service, index) => (
-            <Col md={6} className=" container-card mb-4 " key={index}>
+            <Col key={index} xs={12} md={6} lg={4} className="container-card">
               <div className="services">
                 <div className="card bg-transparent">
-                  {" "}
                   <img className="card-img" src={service.img} alt="" />
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
