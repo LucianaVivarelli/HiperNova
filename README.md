@@ -1,11 +1,11 @@
 <h1 align="center"> Hipernova Solutions ( Landing Page )</h1>
-<br>
-<br>
-  
+
+
+![image](https://github.com/LucianaVivarelli/HiperNova/assets/96242187/c14d4e88-f0f5-4ba6-97aa-d2a36b45383b)
+
+
 <p>Bem-vindo à aplicação Hipernova! Esta é uma aplicação web de um simples Portfólio da Empresa Hipernova Solutions</p>
 
-<br>
-<br>
 <h2>Tecnologias Utilizadas</h2>
 
 - **Frontend**: React.js (Vite)
