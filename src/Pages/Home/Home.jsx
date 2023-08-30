@@ -1,7 +1,7 @@
 import { NavBar } from "../../components/NavBar/NavBar";
 import { Banner } from "../../components/Banner/Banner";
-import { About } from "../../Pages/About/About";
-import { Services } from "../ServiceHN/Services";
+import { About } from "../../components/About/About";
+import { Services } from "../../components/ServiceHN/Services";
 import { Footer } from "../../components/Footer/Footer";
 import { useRef } from "react";
 

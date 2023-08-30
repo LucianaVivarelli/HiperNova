@@ -19,26 +19,7 @@ export const Footer = () => {
               </a>
             </div>
           </Col>
-          <Col md={8}>
-            <Row>
-              <Col md={3}>
-                <h3>Home</h3>
-                
-              </Col>
-              <Col md={3}>
-                <h3>Cadastro</h3>
-                
-              </Col>
-              <Col md={3}>
-                <h3>Sobre</h3>
-                
-              </Col>
-              <Col md={3}>
-                <h3>Contato</h3>
-                
-              </Col>
-            </Row>
-          </Col>
+        
         </Row>
       </Container>
     </div>

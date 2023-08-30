@@ -19,7 +19,7 @@ const servicesData = [
   },
   {
     img: SiteProfissional,
-    title: "Site Profissional Pessoal e Empresarial",
+    title: "Site Profissional",
     text: "Fazemos qualquer tipo de Site empresarial, Venha tirar o seu site do papel e vamos construir juntos o seu sonho",
   },
   {
@@ -43,8 +43,8 @@ export const Services = () => {
         <Row>
           {servicesData.map((service, index) => (
             <Col key={index} xs={12} md={6} lg={4} className="container-card">
-              <div className="services">
-                <div className="card bg-transparent">
+              <div className="services bg-trasparent">
+                <div className="card bg-transparent border-0">
                   <img className="card-img" src={service.img} alt="" />
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
