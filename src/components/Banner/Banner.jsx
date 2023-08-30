@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo  from '../../assets/Logo-Banner.png'
-import { BsWhatsapp } from 'react-icons/Bs';
+import { BsWhatsapp } from 'react-icons/bs';
 import './Banner.sass'
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);

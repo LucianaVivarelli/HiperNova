@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./About.sass";
-import { GiTechnoHeart } from "react-icons/Gi";
+import { GiTechnoHeart } from "react-icons/gi";
 
 export const About = () => {
   return (
