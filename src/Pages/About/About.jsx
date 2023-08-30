@@ -9,10 +9,9 @@ export const About = () => {
         <Row>
           <Col className="title-col  text-center">
             <h2 className="title-main">
-              Quem Somos{" "}
+              Quem Somos
               <span>
-                {" "}
-                <GiTechnoHeart />{" "}
+                <GiTechnoHeart />
               </span>
             </h2>
           </Col>
