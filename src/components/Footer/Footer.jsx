@@ -10,11 +10,13 @@ export const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <div className="social">
-             
-              <FaInstagram className="icon" />
-              <FaTwitter className="icon" />
-             
+          <div className="social-icon">
+              <a href="https://www.instagram.com/hipernovasol/">
+                <FaInstagram />
+              </a>
+              <a href="https://twitter.com/hipernovasol">
+                <FaTwitter />
+              </a>
             </div>
           </Col>
           <Col md={8}>

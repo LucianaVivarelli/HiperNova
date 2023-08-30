@@ -20,10 +20,10 @@ export const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
         
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.instagram.com/hipernovasol/">
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/hipernovasol">
                 <FaTwitter />
               </a>
             </div>
