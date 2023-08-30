@@ -31,7 +31,7 @@ const servicesData = [
 
 export const Services = () => {
   return (
-    <section className=" container-services py-5 animate__animated  animate__fadeInTopRight">
+    <section className=" container-services py-5 animate__animated  animate__fadeInRight">
       <Container>
         <Row>
           <Col className="title-col text-center">
