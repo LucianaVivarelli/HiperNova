@@ -1,0 +1,76 @@
+@use '../../Styles/components/Variables.sass'
+
+.banner
+    margin-top: 0
+    padding: 180px 0 100px 0
+    background-image: Variables.$Background-Banner
+    backdrop-filter: blur(10px)
+
+    & .wrap
+        font-family: 'Mulish'
+        font-size: 7rem
+        font-weight: 700
+        letter-spacing: Variables.$Spacing-Letter-Title
+        line-height: 1
+        margin-bottom: 18px
+        display: block
+
+    & .Banner-p
+        -webkit-background-clip: text
+        -moz-background-clip: text
+        background-clip: text
+        font-size: 1.35rem
+        font-family: 'Mulish'
+        letter-spacing: 1px
+        font-weight: 800
+        line-height: 1.8em
+        font-size: 1.2rem
+        text-align: justify
+        color: #a5a4a4
+
+    & .btn
+        background-color: rgba(255, 255, 255, 0.2)// Fundo do botão com opacidade
+        border: none
+        margin:20px 0
+        font-weight: 500
+        font-family: 'Arial'
+        font-size: 1.2rem
+        color: white
+        padding: 10px 20px
+        border-radius: 15px// Borda arredondada
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)// Sombra sutil
+        transition: background-color 0.3s // Transição suave de cor
+    
+    & .btn:hover 
+            color: black
+            background-color: rgba(255, 255, 255, 0.781)
+            margin-left: 30px
+            font-weight: 700
+    & .btn svg
+        font-size: 40px
+        margin-left: 10px
+        transition: 0.3s ease-in-out
+        line-height: 1
+        width: 30px
+
+    & .btn:hover svg
+        color: green
+
+    & .logo-Banner
+        margin: 0 0 0 7rem
+        animation: updown 3s linear infinite
+        width: 20rem
+        border-radius: Variables.$logo-Banner-Radius
+
+@keyframes updown
+    0%
+        transform: translateY(-20px)
+
+    50%
+        transform: translateY(20px)
+
+    100%
+        transform: translateY(-20px)
+
+.txt-rotate > .wrap
+    border-right: 0.08em solid #667

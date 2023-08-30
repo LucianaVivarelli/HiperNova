@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import logo  from '../../assets/Logo-Banner.png'
+import { BsWhatsapp } from 'react-icons/Bs';
+import './Banner.sass'
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -48,7 +50,7 @@ export const Banner = () => {
   };
 
   const bannerText = [
-    "lorem lorem lorem lorem lorem loremlore mlorem lorme lrlem lorem lorem lorem loremm lorem lorem lorem lorem lorem loremlore mlorem lorme lrlem lorem lorem lorem loremm!"
+    " Nós transformamos o seu site dos sonhos em realidade!"
   ];
 
   return (
@@ -57,13 +59,17 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={15} md={6} xl={7}>
             <h1 className="wrap">{text}</h1>
-            <span>{bannerText}</span>
-            <a href="URL_DO_WHATSAPP" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Contate-nos pelo WhatsApp
+            <span className="Banner-p" >{bannerText}</span>
+            <div className="btn-Banner animate__animated animate__shakeX">
+            <a href="URL_DO_WHATSAPP" target="_blank" rel="noopener noreferrer" className="btn">
+            Entre em Contato conosco! <span> <BsWhatsapp />
+            </span>
             </a>
+            </div>
+          
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src="#" className="img img-fluid" alt="Header Img" />
+            <img src={logo} className="logo-Banner img img-fluid" alt="Header Img" />
           </Col>
         </Row>
       </Container>

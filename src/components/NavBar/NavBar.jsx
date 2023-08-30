@@ -1,14 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import logo from '../../assets/logo.jpeg'
 import { SlSocialLinkedin, SlSocialTwitter, SlSocialInstagram, SlSocialFacebook } from 'react-icons/Sl';
 import { useState, useEffect } from 'react'
-/**/ 
+
 import {
   BrowserRouter as Router
 } from "react-router-dom";
 
+import './NavBar.sass'
 
 export const NavBar= () => {
 
@@ -39,10 +40,10 @@ export const NavBar= () => {
       <Container>
       <Navbar.Brand href="#home">
         <img
-          src="#"
-          width="120"
-          height="120"
-          className=""
+          src={logo}
+          width="100"
+          height="100"
+          className="logo-nav"
           alt="Loggo HiperNova"
         />
       </Navbar.Brand>

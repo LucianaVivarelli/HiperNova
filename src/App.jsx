@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./Pages/Home";
-import "./Style/Global.css";
+import './Styles/App.sass'
+import 'animate.css'
 
 export const App = () => {
   return (

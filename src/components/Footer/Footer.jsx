@@ -1,27 +1,44 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from 'react-icons/fa';
+
+import './Footer.sass'; // Importe seu arquivo Sass para estilos
 
 export const Footer = () => {
   return (
-    <footer  className="bg-dark text-light py-4">
+    <div className="footer">
       <Container>
         <Row>
-          <Col md={4}>Logo</Col>
-          <Col md={2}>
-            <h5>Contato</h5>
+          <Col md={4}>
+            <div className="social">
+              <FaFacebook className="icon" />
+              <FaInstagram className="icon" />
+              <FaTwitter className="icon" />
+              <FaPinterest className="icon" />
+            </div>
           </Col>
-          <Col md={2}>
-            <h5>Projetos</h5>
-          </Col>
-          <Col md={2}>
-            <h5>Sobre</h5>
-          </Col>
-          <Col md={2}>
-            <h5>Serviços</h5>
+          <Col md={8}>
+            <Row>
+              <Col md={3}>
+                <h3>Home</h3>
+                
+              </Col>
+              <Col md={3}>
+                <h3>Cadastro</h3>
+                
+              </Col>
+              <Col md={3}>
+                <h3>Sobre</h3>
+                
+              </Col>
+              <Col md={3}>
+                <h3>Contato</h3>
+                
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
-    </footer>
+    </div>
   );
 };
