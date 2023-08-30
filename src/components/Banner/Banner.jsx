@@ -69,7 +69,7 @@ export const Banner = () => {
           
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={logo} className="logo-Banner img img-fluid" alt="Header Img" />
+            <img src={logo} className="logo-Banner img img-fluid " alt="Header Img" />
           </Col>
         </Row>
       </Container>

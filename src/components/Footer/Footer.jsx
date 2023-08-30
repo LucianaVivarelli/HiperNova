@@ -6,11 +6,11 @@ import './Footer.sass'; // Importe seu arquivo Sass para estilos
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer ">
       <Container>
         <Row>
           <Col md={4}>
-          <div className="social-icon">
+          <div className="social-icon d-inline-flex">
               <a href="https://www.instagram.com/hipernovasol/">
                 <FaInstagram />
               </a>
