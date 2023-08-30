@@ -21,12 +21,11 @@
 
   2. Navegue até o diretório da aplicação:
   
-    $ cd 
+    $ cd hipernova
 
   3. Instale as dependências do frontend e do backend:
   
-    $ cd hipernova
-    $ npm install
+    $ npm i
     $ npm run dev
 
 </pre>
