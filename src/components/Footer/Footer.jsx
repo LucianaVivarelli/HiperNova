@@ -2,7 +2,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import {  FaInstagram, FaTwitter } from 'react-icons/fa';
 
-import './Footer.sass'; // Importe seu arquivo Sass para estilos
+
 
 export const Footer = () => {
   return (

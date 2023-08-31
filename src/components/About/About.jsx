@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import "./About.sass";
 import { GiTechnoHeart } from "react-icons/gi";
 
 export const About = () => {
@@ -23,23 +22,22 @@ export const About = () => {
               técnica! Somos um grupo de mentes apaixonadas pela programação,
               unidas por um objetivo comum: construir experiências digitais
               excepcionais por meio de desenvolvimento web avançado.
-              </p>
-              <p>
-              Nossa história
-              começou em uma jornada colaborativa de aprendizado e paixão pela
-              tecnologia.  Movidos pela ambição de
-              crescer profissionalmente e conquistar a autonomia no mundo da
+            </p>
+            <p>
+              Nossa história começou em uma jornada colaborativa de aprendizado
+              e paixão pela tecnologia. Movidos pela ambição de crescer
+              profissionalmente e conquistar a autonomia no mundo da
               programação, decidimos unir forças e criar nossa própria Empresa.
               Especializados em desenvolvimento web, somos mestres em
               transformar ideias criativas em realidade digital.
-              <span> Nossa abordagem é
-              centrada no usuário, e buscamos constantemente novas maneiras de
-              aprimorar a experiência digital, criando interfaces que cativam e
-              funcionalidades que surpreendem.
+              <span>
+                
+                Nossa abordagem é centrada no usuário, e buscamos constantemente
+                novas maneiras de aprimorar a experiência digital, criando
+                interfaces que cativam e funcionalidades que surpreendem.
               </span>
-              </p>
-             
-            
+            </p>
+
             <p>
               Nossa missão é simples: Moldar o futuro digital por meio de
               códigos e designs inovadores. Temos como compromisso: Trabalhamos
