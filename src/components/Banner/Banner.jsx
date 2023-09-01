@@ -61,7 +61,7 @@ export const Banner = () => {
             <h1 className="wrap">{text}</h1>
             <span className="Banner-p" >{bannerText}</span>
             <div className="btn-Banner animate__animated animate__shakeX">
-            <a href="URL_DO_WHATSAPP" target="_blank" rel="noopener noreferrer" className="btn">
+            <a href="https://wa.me/5521994420226" target="_blank" rel="noopener noreferrer" className="btn">
             Entre em Contato conosco! <span> <BsWhatsapp />
             </span>
             </a>
