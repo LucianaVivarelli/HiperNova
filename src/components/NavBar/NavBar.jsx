@@ -19,7 +19,7 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="social-icon">
-            <a target="_blank" href="https://www.instagram.com/hipernovasol/">
+            <a target="_blank" href="https://instagram.com/hipernovasol?igshid=MzRlODBiNWFlZA==">
               <FaInstagram />
             </a>
             <a target="_blank" href="https://twitter.com/hipernovasol">
