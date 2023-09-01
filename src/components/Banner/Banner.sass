@@ -18,6 +18,9 @@
         display: block
         @include mixins.mobile
             @include mixins.m-left
+        @include mixins.mobile-360
+            
+            margin: 0
 
     & .Banner-p
         -webkit-background-clip: text
@@ -37,7 +40,9 @@
             @include mixins.m-left
             font-size: .8rem
             text-align: center
-
+        @include mixins.mobile-360
+            font-size: .7rem
+            margin: 0
     & .btn
         background-color: rgba(255, 255, 255, 0.2)
         border: none
@@ -58,6 +63,9 @@
             @include mixins.m-left
             font-size: 1rem
             padding: 6px 13px
+        @include mixins.mobile-360
+            
+            margin-left: 0
 
     & .btn:hover
 
