@@ -1,57 +1,75 @@
 @use '../../Styles/components/Variables.sass'
-
+@use '../../Styles/components/mixins'
 .container-services
-    margin: 0 auto
+    @include mixins.container
     margin-bottom: 120px
     box-shadow: -6px -1px 16px 2px rgba(157,21,222,0.79)
     -webkit-box-shadow: -6px -1px 16px 2px rgba(157,21,222,0.79)
     -moz-box-shadow: -6px -1px 16px 2px rgba(157,21,222,0.79)
     border-radius: 50px
-    max-width: 1100px
-  
+    @include mixins.mobile-1180
+        @include mixins.cont-main3
+    @include mixins.mobile-770
+        @include mixins.cont-main2
+
+    @include mixins.mobile
+        @include mixins.cont-main
+        margin-bottom: 50px
 
 .services
+    @include mixins.container
+    @include mixins.flex-center
     height: 350px
     width: 350px
     padding: 40px
-    display: flex
     margin: 0 auto
     flex-direction: column
-    align-items: center
-    justify-content: center
     text-align: center
     background-color: Variables.$bg-Text
-    border-radius: 80px
+    border-radius: 50px
+    @include mixins.mobile
+        height: 230px
+        width: 250px
+        padding: 0px
+        
     
+
     & .card
         height: 400px
-        width:400px
-
+        width: 400px
+        @include mixins.mobile
+            margin-bottom: 50px
+            width: 300px
     & .card-img
         width: 140px
         border-radius: 10px
         margin: 0 auto
         margin-top: 10px
-
+        @include mixins.mobile
+            width: 100px
     & h3
         color: Variables.$Divisor
         padding: 10px 0
-        font-size: 1.8rem
-        
+        font-size: 1.7rem
         font-family: 'nasalization'
         font-weight: 800
         letter-spacing: 1px
+        @include mixins.mobile
+            font-size: 1rem
     & p
-        
+
         color: #fff
-        font-size: 0.8rem
+        font-size: 0.9rem
         margin: 0 auto
         text-align: center
         letter-spacing: 1px
         font-weight: 300
         font-family: 'Mulish'
-        line-height: 1.9rem
+        line-height: 1.2rem
         width: 68%
+        @include mixins.mobile
+            font-size: 0.6.5rem
+            width: 75%
 
 .container-card
     width: 400px
@@ -66,6 +84,9 @@
     transition-duration: 0.3s
     transition-property: transform
     transition-timing-function: ease-out
+    @include mixins.mobile
+        width: 270px
+        height: 270px
 
 .container-card:hover
     transform: translateY(-8px)

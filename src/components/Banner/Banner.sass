@@ -1,12 +1,11 @@
-@use '../../Styles/components/Variables.sass'
-
+@use '../../Styles/components/Variables'
+@use '../../Styles/components/mixins'
 .banner
+
     margin-top: 0
     padding: 180px 0 100px 0
     background-image: Variables.$Background-Banner
     backdrop-filter: blur(10px)
-
-  
 
     & .wrap
         font-family: 'Mulish'
@@ -17,6 +16,8 @@
         line-height: 1
         margin-bottom: 18px
         display: block
+        @include mixins.mobile
+            @include mixins.m-left
 
     & .Banner-p
         -webkit-background-clip: text
@@ -30,30 +31,47 @@
         font-size: 1.2rem
         text-align: justify
         color: #a5a4a4
+        @include mixins.mobile-770
+            font-size: .9rem
+        @include mixins.mobile
+            @include mixins.m-left
+            font-size: .8rem
+            text-align: center
 
     & .btn
         background-color: rgba(255, 255, 255, 0.2)
         border: none
-        margin:20px 0
-        font-weight: 500
+        margin: 20px 0
+        font-weight: 300
         font-family: 'Arial'
         font-size: 1.2rem
-        color: white
+        color: Variables.$Text-color
         padding: 10px 20px
         border-radius: 15px
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
-        transition:  1.2s 
-    
-    & .btn:hover 
-            color: black
-            background-color: rgba(255, 255, 255, 0.781)
-            margin-left: 30px
-            font-weight: 700
+        transition: 1.2s
+
+        @include mixins.mobile-770
+            font-size: 0.7rem
+            padding: 8px 15px
+        @include mixins.mobile
+            @include mixins.m-left
+            font-size: 1rem
+            padding: 6px 13px
+
+    & .btn:hover
+
+        color: black
+        background-color: rgba(255, 255, 255, 0.781)
+        margin-left: 30px
+        font-weight: 700
+
     & .btn svg
         font-size: 40px
         margin-left: 10px
         transition: 0.3s ease-in-out
-        line-height: 1
+        
+        color: #40b908
         width: 30px
 
     & .btn:hover svg
@@ -64,7 +82,12 @@
         animation: updown 3s linear infinite
         width: 20rem
         border-radius: Variables.$logo-Banner-Radius
-
+        @include mixins.mobile-770
+            margin-top: 2.2rem
+            width: 15rem
+        @include mixins.mobile
+            margin-top: 2rem
+            width: 10rem
 @keyframes updown
     0%
         transform: translateY(-20px)

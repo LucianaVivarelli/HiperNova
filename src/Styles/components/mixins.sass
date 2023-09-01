@@ -1,0 +1,41 @@
+@use 'Variables'
+
+    
+@mixin container 
+    max-width: Variables.$container-width
+    margin: 0 auto
+
+@mixin flex-center   
+    display: flex
+    justify-content: center
+    align-items: center 
+
+@mixin m-left
+    font-size:2rem
+    margin-left: 20px
+    
+@mixin cont-main
+    margin-top: 40px
+    width: 370px  
+
+@mixin cont-main2
+    margin-top: 40px
+    width: 500px
+
+@mixin cont-main3
+    margin-top: 40px
+    width: 700px   
+
+@mixin mobile-1180
+    @media(max-width: 1180px)
+        @content
+@mixin mobile-770
+    @media(max-width: 770px)
+        @content
+
+@mixin mobile
+    @media(max-width: 445px)
+        @content
+
+      
+
