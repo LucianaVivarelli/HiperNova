@@ -3,7 +3,7 @@ import { GiTechnoHeart } from "react-icons/gi";
 
 export const About = () => {
   return (
-    <section className=" container-main py-5 animate__animated animate__fadeInLeft">
+    <section className="container-main py-5 animate__animated animate__fadeInLeft">
       <Container>
         <Row>
           <Col className="title-col  text-center">
