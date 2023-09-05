@@ -55,7 +55,7 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container className="img-fluid mx-auto">
         <Row className="align-items-center">
           <Col xs={15} md={6} xl={7}>
             <h1 className="wrap">{text}</h1>
